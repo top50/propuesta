@@ -7,24 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/theme.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar xl_nav black_navbar ">
-            <ul class="nav_ul nav_container">
-                <li><a href="#" target="_blank" rel="noopener noreferrer">link uno</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">link uno</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">link uno</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">link uno</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">link uno</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">link uno</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">link uno</a></li>
-            </ul>
-        </nav>
+        <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+              <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+              <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+            </div>
+            <div class="block lg:hidden">
+              <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+              </button>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+              <div class="text-sm lg:flex-grow">
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                  Docs
+                </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                  Examples
+                </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                  Blog
+                </a>
+              </div>
+              
+            </div>
+          </nav>
         <div class="header">
-            <div class="container">
+            <div class="container md:mx-auto">
                 <div class="header_logo">
                     <h1 class="h1_2xl color_grey_400">Enfermeria y seguridad del paciente</h1>
                 </div>
@@ -34,7 +49,7 @@
     </header>
 
     <section class="cursos">
-        <div class="container">
+        <div class="md:container md:mx-auto">
             <div class="section_titulo">
                 <h2 class="h2_5xl text_center color_yellowgreen">Cursos Disponibles Online</h2>
             </div>
@@ -86,27 +101,24 @@
             </div>
         </div>
     </section>
-<section class="donacion">
-    <div class="section_titulo">
-        <h2 class="h2_5xl color_grey_400 title_center">Colaboración</h2>
-    </div>
-    <div class="box_container">
-<div class="box_donate">
+    <section class="donacion">
 
-    <div class="box_card_donate">
-<div class="box_card_donate_title">
-    <h1 class="h1_4xl color_grey_300 text_center">Si te gusta nuestro trabajo puedes colaborar</h1>
-    <h3 class="h3_3xl color_blue_100 text_center">Realizando tu Donación en el siguiente Boton</h3>
-    <div class="box_card_bt"><button class="bt_registro_donate">Donate</button></div>
-    
-</div>
-    </div>
-</div>
-    </div>
-</section>
+        <div class="container md:mx-auto box_container">
+            <div class="box_donate">
+                <div class="box_card_donate">
+                    <div class="box_card_donate_title">
+                        <h1 class="h1_4xl color_grey_300 text_center">Si te gusta nuestro trabajo puedes colaborar</h1>
+                        <h3 class="h3_3xl color_blue_100 text_center">Realizando tu Donación en el siguiente Boton</h3>
+                        <div class="box_card_bt"><button class="bt_registro_donate">Donate</button></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="blog_interes">
 
-        <div class="container">
+        <div class="container md:mx-auto">
             <div class="section_titulo">
                 <h2 class="h2_4xl color_grey_400">Articulos de Interes</h2>
             </div>
@@ -242,26 +254,46 @@
             </div>
         </div>
     </section>
+
     <section class="blog-noticias" id="blog-noticias">
-        <div class="container">
+        <div class="container mx-0">
             <div class="section_titulo">
-                <h2 class="h2_4xl color_grey_400">Articulos de Interes</h2>
+                <h2 class="h2_4xl color_grey_400">Blog de Noticias</h2>
             </div>
-            <div class="box_container mt_9">
-<div class="card_noticias">
-    <img src="https://picsum.photos/400/200/" alt="">
-<div class="card_text_tittle">
-<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt.</h2>
-</div>
-            </div>
+            <div class="box_container mt_9 w-full">
+                <div class="card_noticias flex-wrap">
+                    <img src="https://picsum.photos/id/237/536/354" alt="" >
+                    <div class="card_text_tittle">
+                        <a href="#">
+                            <h2 class="text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt.</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="card_noticias flex-wrap">
+                    <img src="https://picsum.photos/seed/picsum/536/354" alt="" class="w-full">
+                    <div class="card_text_tittle">
+                        <a href="#">
+                            <h2 class="text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt.</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="card_noticias flex-wrap">
+                    <img src="https://picsum.photos/id/1084/536/354?grayscale" alt="" class="w-full">
+                    <div class="card_text_tittle">
+                        <a href="#">
+                            <h2 class="text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt.</h2>
+                        </a>
+                    </div>
+                </div>
             </div>
 
+        </div>
     </section>
-<footer class="footer">
-    <div class="container">
+    <footer class="footer">
+        <div class="container">
 
-    </div>
-</footer>
+        </div>
+    </footer>
     <!-- UIkit JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/js/uikit-icons.min.js"></script>

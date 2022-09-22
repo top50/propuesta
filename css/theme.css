@@ -192,7 +192,7 @@ body{
 /*shawdo*/
 .box_shadow{
     border: none;
-    box-shadow:2px 3px 6px #8f8f8fa1 ;
+    box-shadow:2px 3px 4px #797979a1 ;
 }
 
 /*marging top*/
@@ -259,15 +259,15 @@ margin: 1px;
     }
   
     /*sectiones*/
-    .blog{
+    .blog_interes{
         width: 100%;
-        background: #cfcfcf;
+        background: #e5e5e5;
         padding: 10px;
-        box-shadow: 2px 3px 3px hsl(0, 0%, 0%);
+        box-shadow: 2px 1px 3px hsla(0, 0%, 19%, 0.769);
     }
     .cursos{
         width: 100%;
-        background: #464547;
+        background: #6e6e6e;
         padding: 10px;
         box-shadow: 2px 3px 5px hsl(0, 0%, 0%);
     }
@@ -276,6 +276,10 @@ margin: 1px;
     background: white;
     padding: 10px;
     box-shadow: 2px 3px 5px hsl(0, 0%, 0%);
+  }
+  .blog-noticias{
+    width: 100%;
+    padding: 10px;
   }
    /*box_card*/
    .box_card{
@@ -320,10 +324,28 @@ margin: 1px;
 /*card_noticias*/    
 .card_noticias{
     display: flex;
+    width: 100%;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+.card_noticias img{
+    width:450px;
 
 }
 .card_text_tittle{
-    margin: 0 10px;
+  width: 500px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_text_tittle h2{
+    text-align: center;
+}
+.card_text_tittle h2:hover{
+    color: #058325;
 }
   /*box_donate*/
   .box_donate{
@@ -361,4 +383,43 @@ align-items: center;
     background: #211f29;
     width: 100%;
     padding: 15px;
+}
+
+
+@media(max-width:68rem){
+  .blog-noticias {
+    padding: 0;
+  }
+  .cursos{
+    padding: 0;
+  }
+  .blog_interes{
+    padding: 0;
+  }
+  .box{
+    width: 100%;
+  }
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card_noticias img{
+    width:100%;
+
+}
+/*byn*/
+.box_card_bt{
+width: 100%;
+}
+.bt_registro_donate{
+  width: 100%;
+}
+/*h*/
+.h1_2xl{
+  font-size: 2rem;
+  text-align: center;
+}
+.h1_4xl{
+  font-size: 2rem;
+}
 }
